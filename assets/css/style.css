@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: #091921;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calc{
+    background-color: #c4c4c4;
+    width: 300px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#calc h1{
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+}
+
+#calc #operations div{
+    text-align: right;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    padding: 0.2em;
+}
+
+#calc #operations #previous-operation{
+    color: #777;
+    font-size: 12px;
+}
+
+#calc #operations #current-operation{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#btn-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+}
+
+#btn-container button{
+    border: 1px solid transparent;
+    height: 4em;
+    background-color: #dbdbdb;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#btn-container button.number{
+    background-color: #F3F3F3;
+}
+
+#btn-container button:hover{
+    border-color: #929292;
+    background-color: #BABABA;
+}
+
+#btn-container button#equal-btn{
+    grid-column: span 2;
+    background-color: rgb(252, 153, 72);
+    transition: all 0.2s;
+}
+
+#btn-container button#equal-btn:hover{
+    background-color: rgb(246, 125, 26);
+}
